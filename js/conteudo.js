@@ -25,7 +25,7 @@ window.CONTEUDO = {
   },
 
   // Foto principal do topo (vertical). Ex.: 'img/larissa.jpg'
-  fotoPerfil: '',
+  fotoPerfil: 'img/larissa.jpg',
 
   /* ---------- Marcas (adesivos) ----------
      cor:    navy | caramel | cream | brown | sand | dusty | cocoa | blue
