@@ -221,7 +221,7 @@ section { position: relative; padding-block: clamp(72px, 10vw, 128px); }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero-social { display: flex; gap: 10px; margin-top: 28px; }
 
-.hero-photo { position: relative; justify-self: center; width: min(100%, 430px); }
+.hero-photo { position: relative; justify-self: center; align-self: start; margin-top: 14px; width: min(100%, 430px); }
 .arch {
   position: relative; aspect-ratio: 4 / 5; overflow: hidden;
   border-radius: 999px 999px 28px 28px;
