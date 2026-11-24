@@ -15,7 +15,7 @@ window.CONTEUDO = {
   /* ---------- Contato ---------- */
   // WhatsApp: 55 + DDD + número, só números. Ex.: '5511987654321'
   // Enquanto estiver vazio, o botão abre o WhatsApp para escolher o contato.
-  whatsapp: '',
+  whatsapp: '5544999608960',
   mensagemPadrao: 'Olá, Larissa! 👋 Vim pelo seu site e gostaria de conversar sobre uma parceria.',
   email: 'larissazamora@hotmail.com',
   redes: {
