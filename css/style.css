@@ -269,7 +269,7 @@ section { position: relative; padding-block: clamp(72px, 10vw, 128px); }
 
 /* ---------- Faixa animada ---------- */
 .marquee { overflow: hidden; background: var(--navy); color: var(--cream); padding-block: clamp(14px, 2vw, 22px); }
-.marquee-track { display: flex; width: max-content; animation: marquee 40s linear infinite; }
+.marquee-track { display: flex; width: max-content; animation: marquee 60s linear infinite; }
 .marquee-group { display: flex; align-items: center; }
 .marquee-group span { padding-inline: clamp(16px, 2.4vw, 30px); font-family: var(--f-display); font-size: clamp(1.5rem, 3.6vw, 2.5rem); line-height: 1.1; white-space: nowrap; }
 .marquee-group span:nth-of-type(even) { font-style: italic; color: var(--sand); }
