@@ -58,9 +58,10 @@ window.CONTEUDO = {
      link:   endereço do post no Instagram/TikTok (usado quando não houver src)
   */
   videos: [
+    { marca: 'Óticas Prevent', titulo: 'Experiência na loja',          tipo: 'Parceria',    categoria: 'produtos',     src: 'videos/oticas-prevent.mp4', capa: 'videos/oticas-prevent.jpg', link: '' },
+    { marca: 'Plataforma Creators Ads', titulo: 'Conteúdo por convite', tipo: 'Divulgação', categoria: 'ugc',          src: 'videos/creators-ads.mp4', capa: 'videos/creators-ads.jpg', link: '' },
+    { marca: 'Putz Ki Fome',   titulo: 'Gastronomia',                  tipo: 'Parceria',    categoria: 'experiencias', src: 'videos/putz-ki-fome.mp4', capa: 'videos/putz-ki-fome.jpg', link: '' },
     { marca: 'Permita',        titulo: 'Campanha via MIS',             tipo: 'UGC',         categoria: 'ugc',          src: '', capa: '', link: '' },
-    { marca: 'Marca parceira', titulo: 'Parceria paga · Creators Ads', tipo: 'UGC',         categoria: 'ugc',          src: '', capa: '', link: '' },
-    { marca: 'Ótica',          titulo: 'Escolhendo óculos novos',      tipo: 'Publi',       categoria: 'produtos',     src: '', capa: '', link: '' },
     { marca: 'Pizzaria',       titulo: 'Noite de pizza',               tipo: 'Experiência', categoria: 'experiencias', src: '', capa: '', link: '' },
     { marca: 'Studio Pilates', titulo: 'Minha aula de pilates',        tipo: 'Experiência', categoria: 'experiencias', src: '', capa: '', link: '' },
     { marca: 'Lanchonete',     titulo: 'O lanche mais pedido',         tipo: 'Experiência', categoria: 'experiencias', src: '', capa: '', link: '' },

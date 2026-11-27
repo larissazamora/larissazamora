@@ -109,7 +109,8 @@
     grid.innerHTML = list('videos').map(function (v, i) {
       var g = GRADS[i % GRADS.length];
       var media = v.src
-        ? '<video src="' + esc(v.src) + '"' + (v.capa ? ' poster="' + esc(v.capa) + '"' : '') + ' muted loop playsinline preload="metadata"></video>'
+        // sem capa, o "#t=0.1" faz o navegador mostrar o primeiro quadro do vídeo no card
+        ? '<video src="' + esc(v.src) + (v.capa ? '' : '#t=0.1') + '"' + (v.capa ? ' poster="' + esc(v.capa) + '"' : '') + ' muted loop playsinline preload="metadata"></video>'
         : v.capa
           ? '<img src="' + esc(v.capa) + '" alt="" loading="lazy">'
           : '<span class="vc-ph" aria-hidden="true">' + esc(String(v.marca || '?').trim().charAt(0)) + '</span>';
