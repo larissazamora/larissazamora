@@ -63,6 +63,7 @@ window.CONTEUDO = {
     { marca: 'Putz Ki Fome',   titulo: 'Gastronomia',                  tipo: 'Parceria',    categoria: 'experiencias', src: 'videos/putz-ki-fome.mp4', capa: 'videos/putz-ki-fome.jpg', link: '' },
     { marca: 'NIVEA Facial Vitamina C 7 em 1', titulo: 'Campanha intermediada pela Creators Ads e Beiersdorf', tipo: 'Publi', categoria: 'ugc', src: 'videos/nivea-vitamina-c.mp4', capa: 'videos/nivea-vitamina-c.jpg', link: '' },
     { marca: 'Zero Pizza / Pizzaria Artesanal', titulo: 'Gastronomia',     tipo: 'Parceria',    categoria: 'experiencias', src: 'videos/zero-pizza.mp4', capa: 'videos/zero-pizza.jpg', link: '' },
+    { marca: 'Óticas Prevent', titulo: 'Óculos solares e de grau',     tipo: 'Unboxing',    categoria: 'produtos',     src: 'videos/oticas-prevent-unboxing.mp4', capa: 'videos/oticas-prevent-unboxing.jpg', link: '' },
     { marca: 'Permita',        titulo: 'Campanha via MIS',             tipo: 'UGC',         categoria: 'ugc',          src: '', capa: '', link: '' },
     { marca: 'Pizzaria',       titulo: 'Noite de pizza',               tipo: 'Experiência', categoria: 'experiencias', src: '', capa: '', link: '' },
     { marca: 'Studio Pilates', titulo: 'Minha aula de pilates',        tipo: 'Experiência', categoria: 'experiencias', src: '', capa: '', link: '' },
