@@ -64,16 +64,16 @@
         ? '<img src="' + esc(m.logo) + '" alt="' + esc(m.nome) + '" loading="lazy" style="--logo-w:' + (Number(m.logoTamanho) || 54) + '%">'
         : '<b class="st-' + est + '" style="--fs:' + fs + 'cqi">' + esc(m.nome) + '</b>';
       return '<li class="sticker-item reveal" style="--d:' + (i * 60) + 'ms">' +
-        '<span class="sticker" style="--bg:' + cor[0] + ';--fg:' + cor[1] + '">' +
+        '<span class="sticker" style="--bg:' + cor[0] + ';--fg:' + cor[1] + '"' + (m.tag ? ' title="' + esc(m.nome + ' · ' + m.tag) + '"' : '') + '>' +
         '<span class="face">' + face + '</span>' +
         '<span class="flap-wrap" aria-hidden="true"><span class="flap"></span></span>' +
         '</span>' +
-        '<span class="sticker-tag">' + esc(m.tag || '') + '</span>' +
         '</li>';
     }).join('');
-    html += '<li class="sticker-item reveal" style="--d:' + (marcas.length * 60) + 'ms">' +
-      '<a href="#contato" class="sticker cta"><span class="face"><b>Sua marca aqui</b><i aria-hidden="true">✦</i></span></a>' +
-      '<span class="sticker-tag">vamos conversar?</span></li>';
+    if (C.adesivoSuaMarca !== false) {
+      html += '<li class="sticker-item reveal" style="--d:' + (marcas.length * 60) + 'ms">' +
+        '<a href="#contato" class="sticker cta" title="Vamos conversar?"><span class="face"><b>Sua marca aqui</b><i aria-hidden="true">✦</i></span></a></li>';
+    }
     ul.innerHTML = html;
     $$('[data-count="marcas"]').forEach(function (el) { el.textContent = marcas.length; });
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitStickers); else fitStickers();

@@ -33,16 +33,23 @@ window.CONTEUDO = {
      estilo: serif | caps | sans | script | display   (tipo de letra do nome)
      logo:   opcional. Ex.: 'img/logos/otica.png' (de preferência PNG com fundo transparente)
      logoTamanho: largura da logo em % do adesivo (padrão 54). Acima de ~60 a dobra pode cobrir a logo.
+     tag:    não aparece embaixo do adesivo; só surge ao passar o mouse.
+     A ordem da lista é a ordem dos adesivos no site.
   */
   marcas: [
-    { nome: 'Permita',        tag: 'Campanha UGC · MIS',            cor: 'navy',    estilo: 'serif' },
-    { nome: 'Marca parceira', tag: 'Parceria paga · Creators Ads',  cor: 'caramel', estilo: 'caps' },
-    { nome: 'Pizzaria',       tag: 'Publi · gastronomia',           cor: 'brown',   estilo: 'script' },
-    { nome: 'Lanchonete',     tag: 'Publi · gastronomia',           cor: 'sand',    estilo: 'sans' },
+    { nome: 'NIVEA',          tag: 'Parceria paga',                 cor: '#0033A0', estilo: 'caps', logo: 'img/logos/nivea.png', logoTamanho: 70 },
     { nome: 'Óticas Prevent', tag: 'Parceria · óculos',             cor: '#2D8A80', estilo: 'display', logo: 'img/logos/oticas-prevent.png', logoTamanho: 72 },
-    { nome: 'Flow Fisioterapia e Pilates', tag: 'Experiência · bem-estar', cor: 'cream', estilo: 'serif', logo: 'img/logos/flow-pilates.png', logoTamanho: 57 },
-    { nome: 'Acessórios',     tag: 'Publi · moda',                  cor: 'cocoa',   estilo: 'script' },
+
+    // Guardados para depois. Para voltar a mostrar um adesivo, apague as // do começo da linha.
+    // { nome: 'Permita',        tag: 'Campanha UGC · MIS',            cor: 'navy',    estilo: 'serif' },
+    // { nome: 'Pizzaria',       tag: 'Publi · gastronomia',           cor: 'brown',   estilo: 'script' },
+    // { nome: 'Lanchonete',     tag: 'Publi · gastronomia',           cor: 'sand',    estilo: 'sans' },
+    // { nome: 'Flow Fisioterapia e Pilates', tag: 'Experiência · bem-estar', cor: 'cream', estilo: 'serif', logo: 'img/logos/flow-pilates.png', logoTamanho: 57 },
+    // { nome: 'Acessórios',     tag: 'Publi · moda',                  cor: 'cocoa',   estilo: 'script' },
   ],
+
+  // Adesivo "Sua marca aqui" no fim da lista: true = mostra, false = esconde
+  adesivoSuaMarca: true,
 
   /* ---------- Vídeos ----------
      categoria: ugc | experiencias | produtos | lifestyle   (usada nos filtros)
