@@ -77,8 +77,8 @@ window.CONTEUDO = {
      img: print salvo na pasta prints/. Ex.: 'prints/feedback-otica.jpg'
   */
   feedbacks: [
+    { marca: 'Óticas Prevent', img: 'prints/oticas-prevent-1.jpg' },
     { marca: 'Permita',        img: '' },
-    { marca: 'Ótica',          img: '' },
     { marca: 'Pizzaria',       img: '' },
     { marca: 'Studio Pilates', img: '' },
     { marca: 'Marca parceira', img: '' },
