@@ -54,18 +54,17 @@
   function renderMarcas() {
     var ul = $('#stickers');
     if (!ul) return;
-    var rots = [-6, 4, -3, 6, -5, 3, -4, 5];
     var marcas = list('marcas');
     var html = marcas.map(function (m, i) {
-      var cor = CORES[m.cor] || CORES.navy;
+      var cor = CORES[m.cor] || (/^#[0-9a-f]{3,8}$/i.test(m.cor || '') ? [m.cor, '#FFFCF6'] : CORES.navy);
       var est = ESTILOS[m.estilo] ? m.estilo : 'serif';
       var maior = Math.max.apply(null, String(m.nome).split(/\s+/).map(function (w) { return w.length; }).concat(3));
       var fs = Math.min(ESTILOS[est][0], 70 / (maior * ESTILOS[est][1])).toFixed(1);
       var face = m.logo
-        ? '<img src="' + esc(m.logo) + '" alt="' + esc(m.nome) + '" loading="lazy">'
+        ? '<img src="' + esc(m.logo) + '" alt="' + esc(m.nome) + '" loading="lazy" style="--logo-w:' + (Number(m.logoTamanho) || 54) + '%">'
         : '<b class="st-' + est + '" style="--fs:' + fs + 'cqi">' + esc(m.nome) + '</b>';
       return '<li class="sticker-item reveal" style="--d:' + (i * 60) + 'ms">' +
-        '<span class="sticker" style="--bg:' + cor[0] + ';--fg:' + cor[1] + ';--rot:' + rots[i % rots.length] + 'deg">' +
+        '<span class="sticker" style="--bg:' + cor[0] + ';--fg:' + cor[1] + '">' +
         '<span class="face">' + face + '</span>' +
         '<span class="flap-wrap" aria-hidden="true"><span class="flap"></span></span>' +
         '</span>' +
@@ -73,7 +72,7 @@
         '</li>';
     }).join('');
     html += '<li class="sticker-item reveal" style="--d:' + (marcas.length * 60) + 'ms">' +
-      '<a href="#contato" class="sticker cta" style="--rot:-5deg"><span class="face"><b>Sua marca aqui</b><i aria-hidden="true">✦</i></span></a>' +
+      '<a href="#contato" class="sticker cta"><span class="face"><b>Sua marca aqui</b><i aria-hidden="true">✦</i></span></a>' +
       '<span class="sticker-tag">vamos conversar?</span></li>';
     ul.innerHTML = html;
     $$('[data-count="marcas"]').forEach(function (el) { el.textContent = marcas.length; });

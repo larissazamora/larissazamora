@@ -29,16 +29,18 @@ window.CONTEUDO = {
 
   /* ---------- Marcas (adesivos) ----------
      cor:    navy | caramel | cream | brown | sand | dusty | cocoa | blue
+             ou a cor da marca em código, ex.: '#2D8A80'
      estilo: serif | caps | sans | script | display   (tipo de letra do nome)
      logo:   opcional. Ex.: 'img/logos/otica.png' (de preferência PNG com fundo transparente)
+     logoTamanho: largura da logo em % do adesivo (padrão 54). Acima de ~60 a dobra pode cobrir a logo.
   */
   marcas: [
     { nome: 'Permita',        tag: 'Campanha UGC · MIS',            cor: 'navy',    estilo: 'serif' },
     { nome: 'Marca parceira', tag: 'Parceria paga · Creators Ads',  cor: 'caramel', estilo: 'caps' },
     { nome: 'Pizzaria',       tag: 'Publi · gastronomia',           cor: 'brown',   estilo: 'script' },
     { nome: 'Lanchonete',     tag: 'Publi · gastronomia',           cor: 'sand',    estilo: 'sans' },
-    { nome: 'Ótica',          tag: 'Parceria · óculos',             cor: 'cream',   estilo: 'display' },
-    { nome: 'Studio Pilates', tag: 'Experiência · bem-estar',       cor: 'dusty',   estilo: 'serif' },
+    { nome: 'Óticas Prevent', tag: 'Parceria · óculos',             cor: '#2D8A80', estilo: 'display', logo: 'img/logos/oticas-prevent.png', logoTamanho: 72 },
+    { nome: 'Flow Fisioterapia e Pilates', tag: 'Experiência · bem-estar', cor: 'cream', estilo: 'serif', logo: 'img/logos/flow-pilates.png', logoTamanho: 57 },
     { nome: 'Acessórios',     tag: 'Publi · moda',                  cor: 'cocoa',   estilo: 'script' },
   ],
 

@@ -329,11 +329,10 @@ section { position: relative; padding-block: clamp(72px, 10vw, 128px); }
 .sticker {
   position: relative; display: block; width: 100%; max-width: 124px; aspect-ratio: 1;
   container-type: inline-size; text-decoration: none;
-  rotate: var(--rot, 0deg);
   filter: drop-shadow(0 8px 9px rgba(27, 42, 65, .24));
-  transition: rotate .5s var(--ease), transform .5s cubic-bezier(.3, 1.5, .5, 1);
+  transition: transform .5s cubic-bezier(.3, 1.5, .5, 1);
 }
-.sticker-item:hover .sticker { rotate: 0deg; transform: translateY(-6px) scale(1.07); }
+.sticker-item:hover .sticker { transform: translateY(-6px) scale(1.07); }
 .face {
   position: absolute; inset: 0; border-radius: 50%; overflow: hidden;
   display: grid; place-items: center; text-align: center;
@@ -343,7 +342,8 @@ section { position: relative; padding-block: clamp(72px, 10vw, 128px); }
   clip-path: polygon(0 0, 100% 0, 100% 52%, 52% 100%, 0 100%);
 }
 .face b { display: block; justify-self: stretch; font-size: var(--fs, 16cqi); line-height: 1.02; }
-.face img { width: 80%; height: 80%; object-fit: contain; }
+/* logo: centralizada um pouco acima e à esquerda, para não ficar sob a dobra do adesivo */
+.face img { position: absolute; left: 44%; top: 44%; width: var(--logo-w, 54%); height: auto; translate: -50% -50%; }
 .st-serif { font-family: var(--f-display); font-style: italic; font-weight: 400; }
 .st-caps { font-family: var(--f-body); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .st-sans { font-family: var(--f-body); font-weight: 700; letter-spacing: -.02em; text-transform: lowercase; }
